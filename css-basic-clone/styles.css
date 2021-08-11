@@ -20,7 +20,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 40px 100px;
+	padding: 2em 5em;
 	z-index: 2;
 	display: flex;
 	justify-content: space-between;
