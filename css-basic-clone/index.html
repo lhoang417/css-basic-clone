@@ -5,10 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Document</title>
 	</head>
 	<body>
-		<header>
+		<header id="header">
 			<div id="bootstrap">
 				<a href="#top" id="boot"
 					><img
@@ -17,7 +21,7 @@
 				/></a>
 			</div>
 			<ul>
-				<li><a href="#">SERVICES</a></li>
+				<li><a href="#second">SERVICES</a></li>
 				<li><a href="#">PORTFOLIO</a></li>
 				<li><a href="#">ABOUT</a></li>
 				<li><a href="#">TEAM</a></li>
@@ -47,7 +51,7 @@
 					<h4>Responsive Design</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-						maxime quam architecto quo inventore harum ex magni, dicta impedi
+						maxime quam architecto quo inventore harum ex magni, dicta impedit.
 					</p>
 				</div>
 				<div id="firstService">
@@ -60,9 +64,78 @@
 				</div>
 			</div>
 		</section>
-		<section id="third"></section>
+		<section id="third">
+			<h2>Portfolio</h2>
+			<h3>Lorem ipsum dolor sit amet consectetur.</h3>
+
+			<div class="row">
+				<div class="itemBox" id="firstItem">
+					<img
+						src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg"
+						alt=""
+					/>
+					<h1 class="itemHeading">Threads</h1>
+					<h3 class="itemDesc">Illustration</h3>
+				</div>
+				<div class="itemBox" id="secondItem">
+					<img
+						src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/2.jpg"
+						alt=""
+					/>
+					<h1 class="itemHeading">Explore</h1>
+					<h3 class="itemDesc">Graphic Design</h3>
+				</div>
+				<div class="itemBox" id="thirdItem">
+					<img
+						src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/3.jpg"
+						alt=""
+					/>
+					<h1 class="itemHeading">Finish</h1>
+					<h3 class="itemDesc">Identity</h3>
+				</div>
+				<div class="itemBox" id="fourthItem">
+					<img
+						src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/4.jpg"
+						alt=""
+					/>
+					<h1 class="itemHeading">Lines</h1>
+					<h3 class="itemDesc">Branding</h3>
+				</div>
+				<div class="itemBox" id="fifthItem">
+					<img
+						src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/5.jpg"
+						alt=""
+					/>
+					<h1 class="itemHeading">Southwest</h1>
+					<h3 class="itemDesc">Website Design</h3>
+				</div>
+				<div class="itemBox" id="sixthItem">
+					<img
+						src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/6.jpg"
+						alt=""
+					/>
+					<h1 class="itemHeading">Window</h1>
+					<h3 class="itemDesc">Photography</h3>
+				</div>
+			</div>
+		</section>
 		<section id="fourth"></section>
 		<section id="fifth"></section>
 		<section id="sixth"></section>
+		<script>
+			let header = document.getElementById("header");
+			window.onscroll = function () {
+				scrollFunction();
+			};
+			function scrollFunction() {
+				if (document.documentElement.scrollTop > 0) {
+					header.style.backgroundColor = "#212529";
+					header.style.transform = "scale(90%)";
+				} else {
+					header.style.backgroundColor = "transparent";
+					header.style.transform = "scale(100%)";
+				}
+			}
+		</script>
 	</body>
 </html>
